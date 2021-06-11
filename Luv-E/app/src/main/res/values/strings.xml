@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Luv-E</string>
+    <string name="channel_name">Message</string>
+    <string name="channel_description">Required To Notify New Messages</string>
+
+</resources>

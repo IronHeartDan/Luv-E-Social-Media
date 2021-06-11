@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload_details"
+    android:background="@color/colorPrimary">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/thi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/upload_details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/rotate_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@+id/edit_profile_pic"
+        android:src="@drawable/ic_rotate_right_black_24dp"
+        android:transitionName="init"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rotate_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/edit_profile_pic"
+        android:src="@drawable/ic_rotate_left_black_24dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/edit_profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/preview_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:backgroundTint="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/load_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_profile_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rect"
+            android:gravity="center"
+            android:hint="Set UserName"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/validation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/clear"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/edit_display_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect"
+            android:gravity="center"
+            android:hint="Set Display Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rect"
+            android:text="Save"
+            android:textColor="@color/colorAccent" />
+
+        <ProgressBar
+            android:id="@+id/load_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

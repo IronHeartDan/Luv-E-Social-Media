@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#383c4a</color>
+    <color name="colorPrimaryDark">#a4b0be</color>
+    <color name="colorAccent">#55efc4</color>
+    <color name="clear">#ff7675</color>
+    <color name="edittext">#ffcccc</color>
+    <color name="edittextHint">#ffb8b8</color>
+    <color name="result">#dfe6e9</color>
+    <color name="signIN_status">#cd84f1</color>
+    <color name="chat_status">#222f3e</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

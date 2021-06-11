@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "306659965450",
+    "firebase_url": "https://luve-105b7.firebaseio.com",
+    "project_id": "luve-105b7",
+    "storage_bucket": "luve-105b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306659965450:android:c7211e808ff35c17447df3",
+        "android_client_info": {
+          "package_name": "com.example.luve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306659965450-025ebmb0hr18ks0cbtl2ln8v32570hek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.luve",
+            "certificate_hash": "0ead4bb63f8277f01e868aabdb9280e1b60860a4"
+          }
+        },
+        {
+          "client_id": "306659965450-onq4p2kmm07v10h5i1jqs129rvnb6epd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBijFmtBpgWrXkvcfCmUZw3V8rtF8dsVKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306659965450-onq4p2kmm07v10h5i1jqs129rvnb6epd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

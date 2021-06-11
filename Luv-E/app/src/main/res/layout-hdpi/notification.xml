@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click_notification"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginBottom="10dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/noti_profile_pic"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noti_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/noti_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/delete_req"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/accept_req"
+        android:background="@color/clear"
+        android:text="Delete"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/accept_req"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="2dp"
+        android:background="@color/colorAccent"
+        android:text="Accept"
+        android:textSize="8sp" />
+
+</RelativeLayout>

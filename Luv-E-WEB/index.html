@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+
+body {
+margin:0;
+}
+
+.watch_story{
+display:none;
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+}
+
+
+.topnav {
+width:100%;
+height:200px;
+border-bottom:10px solid grey;
+white-space:nowrap;
+overflow-x:auto;
+overflow-y:hidden;
+}
+
+
+.botnav {
+position:fixed;
+background:white;
+bottom:0;
+width:100%;
+height:150px;
+border-top:10px solid grey;
+border-radius:50px 50px 0 0;
+display:flex;
+}
+
+
+.profile{
+padding:5px;
+margin:8px;
+height:150px;
+width:150px;
+border-radius:50%;
+border:10px solid silver;
+display:inline-block;
+overflow:hidden;
+}
+
+.story {
+display:none;
+position:fixed;
+width:100%;
+height:91%;
+background:silver;
+}
+
+.story i{
+float:right;
+}
+
+.post_body{
+border:none;
+height:1350px;
+width:100%;
+}
+
+</style>
+
+<script>
+
+function navClicked(btn){
+
+
+
+
+
+if(btn == "homebtn"){
+document.getElementById(btn).style.color = "";
+document.getElementById("searchbtn").style.color = "silver";
+document.getElementById("profilebtn").style.color = "silver";
+} else if (btn =="searchbtn"){
+document.getElementById(btn).style.color = "";
+document.getElementById("homebtn").style.color = "silver";
+document.getElementById("profilebtn").style.color = "silver";
+}else {
+document.getElementById(btn).style.color = "";
+document.getElementById("homebtn").style.color = "silver";
+document.getElementById("searchbtn").style.color = "silver";
+}
+
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+
+
+
+
+
+
+<div class="story">'
+
+<i class="material-icons" style="margin:25px;margin-top:20px;font-size:60px;">highlight_off</i>
+
+
+</div>
+
+
+<div class="topnav">
+
+<div class="profile">
+<img src="dp.jpg" width="150" style="border-radius:50%;"/> 
+</div>
+
+<div class="profile"></div>
+<div class="profile"></div><div class="profile"></div><div class="profile"></div><div class="profile"></div><div class="profile"></div>
+</div>
+
+
+
+
+
+
+<iframe class="post_body" name="post_body" src="post.html">
+
+</iframe>
+
+
+
+
+
+<div class="botnav">
+<div style="width:40%;" align="center" id="navbtn">
+
+<a href="post.html" target="post_body" onclick="navClicked('homebtn')"><i class="material-icons" id="homebtn" style="margin:20px;margin-top:25px;font-size:80px; ">home</i></a>
+<a href="search.html" target="post_body" onclick="navClicked('searchbtn')"><i class="material-icons" id="searchbtn" style="margin:20px;margin-top:25px;font-size:80px; color:silver;">search</i></a>
+<a href="profile.html" target="post_body" onclick="navClicked('profilebtn')"><i class="material-icons" id="profilebtn" style="margin:20px;margin-top:25px;font-size:80px; color:silver;">person</i></a>
+
+
+</div>
+<div style="width:20%;" align="center"><a href="#"><i class="material-icons" style="margin:15px;font-size:120px;color:black;">add_circle</i></a></div>
+
+
+<div style="width:40%;"  align="center">
+
+
+<text  style="font-size:45px;">Darknoon's Post</text>
+
+<i class="material-icons" style="margin:20px;margin-top:20px;font-size:60px; color:lightgreen;">share</i>
+<i class="material-icons" style="margin:20px;margin-top:20px;font-size:60px; color:lightgreen;">speaker_notes</i>
+<i class="material-icons" style="margin:20px;margin-top:20px;font-size:60px; color:red;">favorite</i>
+
+</div>
+</div>
+
+<div class="watch_story">
+
+</div>
+</body>
+</html>
